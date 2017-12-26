@@ -20,7 +20,7 @@ _on going..._
 - [x] Adding social authentication to the site
 
 ### Sharing Content
-- [ ] Creating an image bookmarking website
+- [x] Creating an image bookmarking website
 - [ ] Posting content from other websites
 - [ ] Creating a detail view for images
 - [ ] Creating image thumbnails using sorl-thumbnail
