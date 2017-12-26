@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social.apps.django_app.default'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -121,5 +122,21 @@ EMAIL_USE_TLS = True
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'account.authentication.EmailAuthBackend'
+    'account.authentication.EmailAuthBackend',
+
+    'social.backends.facebook.Facebook2OAuth2',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth'
 )
+
+#gplus
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '130168495982-dksej3aup7knec7e6sai1rvhckjibdpc.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'YitBq3Uai0W8IfQvm7wLCcn9'
+
+#TwitterOauth
+SOCIAL_AUTH_TWITTER_KEY = 'JdbDyq96n3zskSYs7Zcxs16of'
+SOCIAL_AUTH_TWITTER_SECRET = 'j5gtJeYzWHKqi9bpJUFatXwle9FBj1iPbTniX0afaY7NoMOUdv'
+
+#Facebook
+SOCIAL_AUTH_FACEBOOK_KEY = '552070894995546'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'b8f73e546ed4bc7e587e039c45188ff2'
