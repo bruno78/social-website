@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^create/$', views.image_create, name='create'),
+    url(r'^detail/(?P<di>\d+)/(?P<slug>[-\w]+)/$', views.image_detail, name='detail'),
 ]

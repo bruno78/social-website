@@ -18,7 +18,7 @@ def image_create(request):
             cd = form.cleaned_data
             new_item = form.save(commit=False)
             # assign current user to the item
-            new_item.user = request.user 
+            new_item.user = request.user
             new_item.save()
             messages.success(request, 'Image added successfully')
             # redirect to new created item detail view
@@ -28,3 +28,7 @@ def image_create(request):
         form = ImageCreateForm(data=request.GET)
 
     return render(request, 'images/image/create.html', {'section': 'images', 'form': form})
+
+def image_detail(request, id, slug):
+    image = get_object_or_404(Image, id=id, slug=slug)
+    return render(request, 'images/image/detail.html', {'section': 'images', 'image': image})
