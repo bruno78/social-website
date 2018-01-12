@@ -21,11 +21,11 @@ _on going..._
 
 ### Sharing Content
 - [x] Creating an image bookmarking website
-- [ ] Posting content from other websites
+- [x] Posting content from other websites
       * Building a bookmarklet with jQuery
-      * Overriding the save method of a ModelForm 
-- [ ] Creating a detail view for images
-- [ ] Creating image thumbnails using sorl-thumbnail
+      * Overriding the save method of a ModelForm
+- [x] Creating a detail view for images
+- [x] Creating image thumbnails using sorl-thumbnail
 - [ ] Adding AJAX actions with jQuery
 - [ ] Creating custom decorators for user's views
 - [ ] Adding AJAX pagination to the user's list views.  
