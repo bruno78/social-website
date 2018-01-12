@@ -22,6 +22,8 @@ _on going..._
 ### Sharing Content
 - [x] Creating an image bookmarking website
 - [ ] Posting content from other websites
+      * Building a bookmarklet with jQuery
+      * Overriding the save method of a ModelForm 
 - [ ] Creating a detail view for images
 - [ ] Creating image thumbnails using sorl-thumbnail
 - [ ] Adding AJAX actions with jQuery
